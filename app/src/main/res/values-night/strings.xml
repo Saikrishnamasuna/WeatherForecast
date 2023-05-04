@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weather_desc">Weather Description</string>
+    <string name="humidity">Humidity: 0 %</string>
+    <string name="pressure">Pressure: 0 hpa</string>
+    <string name="wind">Wind: 0 m/s</string>
+    <string name="temp">0 °C</string>
+</resources>

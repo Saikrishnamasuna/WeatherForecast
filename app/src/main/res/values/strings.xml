@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">WeatherForecast</string>
+    <string name="weather_desc">Weather Description</string>
+    <string name="humidity">Humidity</string>
+    <string name="pressure">Pressure</string>
+    <string name="wind">Wind</string>
+    <string name="temp">0 °C</string>
+    <string name="temp_lable">Temperature:</string>
+    <string name="temp_unit">\u00B0C</string>
+    <string name="wind_lable">Wind:</string>
+    <string name="wind_unit">m/s</string>
+    <string name="pressure_lable">Pressure:</string>
+    <string name="pressure_unit">hPa</string>
+    <string name="humidity_lable">humidity:</string>
+    <string name="humidity_unit">%</string>
+    <string name="ok">Ok</string>
+    <string name="search_city">Search city</string>
+    <string name="visibility">Visibility</string>
+    <string name="air_pressure">Air pressure</string>
+    <string name="feels_like">Feels like</string>
+    <string name="sunrise">Sunrise</string>
+    <string name="sunset">Sunset</string>
+    <string name="search_image">Search Image</string>
+</resources>

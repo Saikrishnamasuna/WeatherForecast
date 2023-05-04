@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="exitdialog_animation1">
+        <item name="android:windowEnterAnimation">@anim/exitdialog_anim1</item>
+        <item name="android:windowExitAnimation">@anim/exitdialog_anim2</item>
+    </style>
+    <style name="circleBackground_red">
+        <item name="android:background">@drawable/dialog_circle_red</item>
+    </style>
+</resources>
