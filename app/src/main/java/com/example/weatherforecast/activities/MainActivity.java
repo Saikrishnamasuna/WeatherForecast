@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             if (weatherForeCastResponse != null && weatherForeCastResponse.getCod() == 200) {
                 setData(weatherForeCastResponse);
             } else {
-                AppUtils.customErrorAlert(this, "city not found");
+                AppUtils.customErrorAlert(this, "City not found");
             }
 
         });
