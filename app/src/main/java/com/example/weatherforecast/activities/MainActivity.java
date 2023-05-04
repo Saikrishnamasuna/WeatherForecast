@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
@@ -77,6 +78,10 @@ public class MainActivity extends AppCompatActivity {
 
     @SuppressLint("SetTextI18n")
     public void setData(WeatherForeCastResponse weatherForeCastResponse) {
+        if(binding.weatherMain.getVisibility() == View.GONE ) {
+            binding.weatherMain.setVisibility(View.VISIBLE);
+            binding.dataLl.setVisibility(View.VISIBLE);
+        }
         double temp = weatherForeCastResponse.getMain().getTemp() - 273.15;
         double temp_feel_like = weatherForeCastResponse.getMain().getFeelsLike() - 273.15;
         double temp_high = weatherForeCastResponse.getMain().getTempMax() - 273.15;
@@ -207,6 +212,9 @@ public class MainActivity extends AppCompatActivity {
             if (!gsonobj.isEmpty()) {
                 WeatherForeCastResponse weatherForeCastResponse = gson.fromJson(gsonobj, WeatherForeCastResponse.class);
                 setData(weatherForeCastResponse);
+            }else {
+                binding.weatherMain.setVisibility(View.GONE);
+                binding.dataLl.setVisibility(View.GONE);
             }
 
         } catch (Exception e) {
